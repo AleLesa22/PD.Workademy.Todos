@@ -1,17 +1,43 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PD.Workademy.Todo.Web.ApiModels;
+using PD.Workademy.Todo.Web.Service;
 
 namespace PD.Workademy.Todo.Web.Controllers
 {
-    [Route("api/[controller]/{id}")]
     [ApiController]
     public class TodoItemController : ApiBaseController
     {
-        [HttpGet]
-        public async Task<ActionResult> Todo(Guid id)
+        TodoItemService todoItemService = new TodoItemService();
+
+
+        [HttpPost("/addTodoItem")]
+        public async Task<ActionResult> AddTodoItem([FromBody] TodoItemDTO request)
         {
-            List<string> Todo = new List<string>() { "String1" };
-            return Ok(Todo);
+            todoItemService.AddTodoItem(request);
+            return Ok(todoItemService.GetTodoItem(request.Id));
+        }
+
+
+        [HttpGet("/getTodoItemById/{Id}")]
+        public async Task<ActionResult> GetTodoItemById(Guid Id)
+        {
+            return Ok(todoItemService.GetTodoItem(Id));
+        }
+
+        [HttpDelete("/deleteTodoItemById/{Id}")]
+        public async Task<ActionResult> deleteTodoItem(Guid Id)
+        {
+            todoItemService.DeleteTodoItem(Id);
+            return Ok();
+        }
+
+
+        [HttpPut("/updateTodoItem/{Id}")]
+        public async Task<ActionResult> updateTodoItem(Guid Id, TodoItemDTO request)
+        {
+            todoItemService.UpdateTodoItem(Id, request);
+            return Ok(todoItemService.GetTodoItem(Id));
         }
     }
 }
