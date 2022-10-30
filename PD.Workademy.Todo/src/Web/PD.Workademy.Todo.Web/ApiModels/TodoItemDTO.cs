@@ -8,5 +8,19 @@
         public bool IsDone { get; private set; }
         public CategoryDTO Category { get; set; }
         public UserDTO User { get; set; }
+
+        public TodoItemDTO(Guid Id, string Title, string? Description, bool IsDone, CategoryDTO Category, UserDTO User)
+        {
+            this.Id = Id;
+            this.Title = Title;
+            this.Description = Description;
+            this.IsDone = IsDone;
+            this.Category = Category;
+            this.User = User;
+        }
+        public TodoItemDTO()
+        {
+
+        }
     }
 }
