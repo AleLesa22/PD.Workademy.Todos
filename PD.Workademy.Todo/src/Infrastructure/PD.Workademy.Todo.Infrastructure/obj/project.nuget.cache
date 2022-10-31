@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fXrIBckZ6K9qiaRx9qJ/FAoZCoVM0ELCVTO8LVNpCso5oKQ8KIlm1G4LutlUk6/bNHCvfAJXh89vtsVyzWaSZw==",
+  "dgSpecHash": "Ny0fK3QuL33RGsV/1uD5/FPHlC3lMpKVUht0sEcaKHYzy4YQcNiWkIZ76wSZG4coUToQg1rIoG6oBUCw5qStmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\29PD-WKTODO- TRECI TASK\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\ToDo_FINAL\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
