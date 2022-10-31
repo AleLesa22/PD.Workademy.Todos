@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\avidakovic\\Desktop\\PD_Workademy_FINAL\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\PD.Workademy.Todo.Application.csproj": {}
+    "C:\\Users\\avidakovic\\Desktop\\29PD-WKTODO- TRECI TASK\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\PD.Workademy.Todo.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\avidakovic\\Desktop\\PD_Workademy_FINAL\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\PD.Workademy.Todo.Application.csproj": {
+    "C:\\Users\\avidakovic\\Desktop\\29PD-WKTODO- TRECI TASK\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\PD.Workademy.Todo.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\avidakovic\\Desktop\\PD_Workademy_FINAL\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\PD.Workademy.Todo.Application.csproj",
+        "projectUniqueName": "C:\\Users\\avidakovic\\Desktop\\29PD-WKTODO- TRECI TASK\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\PD.Workademy.Todo.Application.csproj",
         "projectName": "PD.Workademy.Todo.Application",
-        "projectPath": "C:\\Users\\avidakovic\\Desktop\\PD_Workademy_FINAL\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\PD.Workademy.Todo.Application.csproj",
+        "projectPath": "C:\\Users\\avidakovic\\Desktop\\29PD-WKTODO- TRECI TASK\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\PD.Workademy.Todo.Application.csproj",
         "packagesPath": "C:\\Users\\avidakovic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\avidakovic\\Desktop\\PD_Workademy_FINAL\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\obj\\",
+        "outputPath": "C:\\Users\\avidakovic\\Desktop\\29PD-WKTODO- TRECI TASK\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
