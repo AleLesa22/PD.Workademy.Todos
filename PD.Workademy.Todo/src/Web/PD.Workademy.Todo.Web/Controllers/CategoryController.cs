@@ -5,17 +5,15 @@ using PD.Workademy.Todo.Web.ApiModels;
 namespace PD.Workademy.Todo.Web.Controllers
 {
     
-    [ApiController]
     public class CategoryController : ApiBaseController
     {
-        
         //ENDPOINTS POST,GET,PUT,DELETE
         [HttpGet]
         public async Task<ActionResult> GetAllCategories()
         {
             List<CategoryDTO> GetAllCategories()
             {
-                List<CategoryDTO> Categories = new List<CategoryDTO>() 
+                List<CategoryDTO> categories = new List<CategoryDTO>() 
                 {
 
                 new CategoryDTO(new Guid("747394a8-3712-4743-a2d1-521d2df10223"), "Easy"),
@@ -26,7 +24,7 @@ namespace PD.Workademy.Todo.Web.Controllers
 
                 new CategoryDTO(new Guid("c81382f5-55ae-4617-b911-9a48f9bb5892"), "Hard")
                 };
-                return Categories;
+                return categories;
             }
             return Ok(GetAllCategories());
         }
@@ -37,7 +35,7 @@ namespace PD.Workademy.Todo.Web.Controllers
         {
             List<CategoryDTO> AddCategory(CategoryDTO request)
             {
-                List<CategoryDTO> Categories = new List<CategoryDTO>()
+                List<CategoryDTO> categories = new List<CategoryDTO>()
                 {
 
                 new CategoryDTO(new Guid("747394a8-3712-4743-a2d1-521d2df10223"), "Easy"),
@@ -49,8 +47,8 @@ namespace PD.Workademy.Todo.Web.Controllers
                 new CategoryDTO(new Guid("c81382f5-55ae-4617-b911-9a48f9bb5892"), "Hard")
                 };
 
-                Categories.Add(request);
-                return Categories;
+                categories.Add(request);
+                return categories;
             }
             return Ok(AddCategory(request));
         }
@@ -62,13 +60,13 @@ namespace PD.Workademy.Todo.Web.Controllers
             CategoryDTO GetCategory(Guid Id)
             {
                 CategoryDTO categoryDTO = new CategoryDTO();
-                List<CategoryDTO> Categories = new List<CategoryDTO>()
+                List<CategoryDTO> categories = new List<CategoryDTO>()
                     {
                      new CategoryDTO(new Guid("747394a8-3712-4743-a2d1-521d2df10223"), "Easy"),
                      new CategoryDTO(new Guid("e7efd2aa-ceac-45af-9421-7cb0d95ab272"), "Medium"),
                      new CategoryDTO(new Guid("c81382f5-55ae-4617-b911-9a48f9bb5892"), "Hard")
                     };
-                categoryDTO = Categories.Find(x => x.Id == Id);
+                categoryDTO = categories.Find(x => x.Id == Id);
                 return categoryDTO;
             }
             return Ok(GetCategory(Id));
@@ -81,15 +79,15 @@ namespace PD.Workademy.Todo.Web.Controllers
             List<CategoryDTO> DeleteCategory(Guid Id)
             {
                 CategoryDTO categoryDTO = new CategoryDTO();
-                List<CategoryDTO> Categories = new List<CategoryDTO>()
+                List<CategoryDTO>  categories = new List<CategoryDTO>()
                 {
                      new CategoryDTO(new Guid("747394a8-3712-4743-a2d1-521d2df10223"), "Easy"),
                      new CategoryDTO(new Guid("e7efd2aa-ceac-45af-9421-7cb0d95ab272"), "Medium"),
                      new CategoryDTO(new Guid("c81382f5-55ae-4617-b911-9a48f9bb5892"), "Hard")
                 };
-                categoryDTO = Categories.Find(x => x.Id == Id);
-                Categories.Remove(categoryDTO);
-                return Categories;
+                categoryDTO =  categories.Find(x => x.Id == Id);
+                categories.Remove(categoryDTO);
+                return categories;
             }
             return Ok(DeleteCategory(Id));
             
@@ -102,16 +100,16 @@ namespace PD.Workademy.Todo.Web.Controllers
             List<CategoryDTO> UpdateCategory(Guid Id, CategoryDTO request)
             {
                     CategoryDTO categoryDTO = new CategoryDTO();
-                    List<CategoryDTO> Categories = new List<CategoryDTO>()
+                    List<CategoryDTO> categories = new List<CategoryDTO>()
                     {
                         new CategoryDTO(new Guid("747394a8-3712-4743-a2d1-521d2df10223"), "Easy"),
                         new CategoryDTO(new Guid("e7efd2aa-ceac-45af-9421-7cb0d95ab272"), "Medium"),
                         new CategoryDTO(new Guid("c81382f5-55ae-4617-b911-9a48f9bb5892"), "Hard")
                     };
-                    categoryDTO = Categories.Find(x => x.Id == Id);
+                    categoryDTO = categories.Find(x => x.Id == Id);
                     categoryDTO.Id = request.Id;
                     categoryDTO.Name = request.Name;
-                    return Categories;
+                    return categories;
             }
             return Ok(UpdateCategory(Id, request));
         }

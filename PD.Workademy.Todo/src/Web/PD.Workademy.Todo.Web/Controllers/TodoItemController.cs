@@ -6,9 +6,6 @@ using System.Collections.Generic;
 
 namespace PD.Workademy.Todo.Web.Controllers
 {
-    
-    [ApiController]
-
     //GET TODO ITEM
     public class TodoItemController : ApiBaseController
     {
@@ -31,7 +28,7 @@ namespace PD.Workademy.Todo.Web.Controllers
         [HttpPost]
         public async Task<ActionResult> AddTodoItem([FromBody] TodoItemDTO newTodoItem)
         {
-            List<TodoItemDTO> TodoItems =
+            List<TodoItemDTO> todoItems =
                 new List<TodoItemDTO>()
                 {
                         new TodoItemDTO(
@@ -50,15 +47,15 @@ namespace PD.Workademy.Todo.Web.Controllers
                                             new UserDTO(new Guid("1fc0fac6-77f0-4f5f-be57-e183897369c2"),"Ognjen","Ognjenovic")
                                         ),
                 };
-            TodoItems.Add(newTodoItem);
-            return Ok(TodoItems);
+            todoItems.Add(newTodoItem);
+            return Ok(todoItems);
         }
 
         //DELETE
         [HttpDelete]
         public async Task<ActionResult> DeleteTodoItem(Guid Id)
         {
-               List<TodoItemDTO> TodoItems =
+               List<TodoItemDTO> todoItems =
                new List<TodoItemDTO>()
                 {
                         new TodoItemDTO(
@@ -77,16 +74,16 @@ namespace PD.Workademy.Todo.Web.Controllers
                                             new UserDTO(new Guid("1fc0fac6-77f0-4f5f-be57-e183897369c2"),"Ognjen","Ognjenovic")
                                         ),
                 };
-            TodoItemDTO TodoItemToDelete = TodoItems.Find(x => x.Id == Id);
-            TodoItems.Remove(TodoItemToDelete);
-            return Ok(TodoItems);
+            TodoItemDTO todoItemToDelete = todoItems.Find(x => x.Id == Id);
+            todoItems.Remove(todoItemToDelete);
+            return Ok(todoItems);
         }
 
         //UPDATE
         [HttpPut]
         public async Task<ActionResult> UpdateTodoItem(Guid Id, TodoItemDTO newTodoItem)
         {
-            List<TodoItemDTO> TodoItems =
+            List<TodoItemDTO> todoItems =
                new List<TodoItemDTO>()
                 {
                         new TodoItemDTO(
@@ -105,19 +102,13 @@ namespace PD.Workademy.Todo.Web.Controllers
                                             new UserDTO(new Guid("1fc0fac6-77f0-4f5f-be57-e183897369c2"),"Ognjen","Ognjenovic")
                                         ),
                 };
-            TodoItemDTO oldtodoItem = TodoItems.Find(x => x.Id == Id);
-            oldtodoItem.Id = newTodoItem.Id;
-            oldtodoItem.Title = newTodoItem.Title;
-            oldtodoItem.Description = newTodoItem.Description;
-            oldtodoItem.Category = newTodoItem.Category;
-            oldtodoItem.User = newTodoItem.User;
+            TodoItemDTO oldTodoItem = todoItems.Find(x => x.Id == Id);
+            oldTodoItem.Id = newTodoItem.Id;
+            oldTodoItem.Title = newTodoItem.Title;
+            oldTodoItem.Description = newTodoItem.Description;
+            oldTodoItem.Category = newTodoItem.Category;
+            oldTodoItem.User = newTodoItem.User;
             return Ok(newTodoItem);
         }
-
-
-
-
-
-
     }
 }

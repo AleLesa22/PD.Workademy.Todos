@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "guXfcHrVw7uQRvuLh+ORa/bVnKJjKkIsdCEh3VhV7dpthjb5wceCGFbZygni63CEQtTUifIzI1A8wa4u8N8xDQ==",
+  "dgSpecHash": "dZM66IwdW0inrRqHQ5j0qvOKg/wDVogkmdnf8UP+JlkvBGw7+9t7tZD4GNDlzg4H8xF8RRT3zA6UrSSOzfZV2Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\28PD-WK\\PD.Workademy.Todo\\src\\Web\\PD.Workademy.Todo.Web\\PD.Workademy.Todo.Web.csproj",
+  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\29PD-WKTODO- TRECI TASK\\PD.Workademy.Todo\\src\\Web\\PD.Workademy.Todo.Web\\PD.Workademy.Todo.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

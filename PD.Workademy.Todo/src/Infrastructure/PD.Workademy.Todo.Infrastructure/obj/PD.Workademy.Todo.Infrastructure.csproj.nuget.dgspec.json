@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\avidakovic\\Desktop\\28PD-WK\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj": {}
+    "C:\\Users\\avidakovic\\Desktop\\29PD-WKTODO- TRECI TASK\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\avidakovic\\Desktop\\28PD-WK\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj": {
+    "C:\\Users\\avidakovic\\Desktop\\29PD-WKTODO- TRECI TASK\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\avidakovic\\Desktop\\28PD-WK\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\avidakovic\\Desktop\\29PD-WKTODO- TRECI TASK\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj",
         "projectName": "PD.Workademy.Todo.Infrastructure",
-        "projectPath": "C:\\Users\\avidakovic\\Desktop\\28PD-WK\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\avidakovic\\Desktop\\29PD-WKTODO- TRECI TASK\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\avidakovic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\avidakovic\\Desktop\\28PD-WK\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\avidakovic\\Desktop\\29PD-WKTODO- TRECI TASK\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

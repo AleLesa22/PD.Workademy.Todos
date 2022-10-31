@@ -5,13 +5,12 @@ using PD.Workademy.Todo.Web.ApiModels;
 namespace PD.Workademy.Todo.Web.Controllers
 {
     
-    [ApiController]
     public class TodoItemsController : ApiBaseController
     {
         [HttpGet]
         public async Task<ActionResult> GetAllTodoItems()
         {
-                List<TodoItemDTO> TodoItems =
+                List<TodoItemDTO> todoItems =
                 new List<TodoItemDTO>()
                 {
                         new TodoItemDTO(
@@ -30,7 +29,7 @@ namespace PD.Workademy.Todo.Web.Controllers
                                             new UserDTO(new Guid("1fc0fac6-77f0-4f5f-be57-e183897369c2"),"Ognjen","Ognjenovic")
                                         ),
                 };
-            return Ok(TodoItems);
+            return Ok(todoItems);
         }
     }
 }
