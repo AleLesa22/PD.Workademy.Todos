@@ -11,7 +11,7 @@ namespace PD.Workademy.Todo.Web.Controllers
     {
         //GET
         [HttpGet]
-        public async Task<ActionResult> GetTodoItem(Guid Id)
+        public async Task<ActionResult> GetTodoItemAsync(Guid Id)
         {
             TodoItemDTO todoitem =
                 new TodoItemDTO (
@@ -26,7 +26,7 @@ namespace PD.Workademy.Todo.Web.Controllers
 
         //ADD TODO ITEM
         [HttpPost]
-        public async Task<ActionResult> AddTodoItem([FromBody] TodoItemDTO newTodoItem)
+        public async Task<ActionResult> AddTodoItemAsync([FromBody] TodoItemDTO newTodoItem)
         {
             List<TodoItemDTO> todoItems =
                 new List<TodoItemDTO>()
@@ -53,7 +53,7 @@ namespace PD.Workademy.Todo.Web.Controllers
 
         //DELETE
         [HttpDelete]
-        public async Task<ActionResult> DeleteTodoItem(Guid Id)
+        public async Task<ActionResult> DeleteTodoItemAsync(Guid Id)
         {
                List<TodoItemDTO> todoItems =
                new List<TodoItemDTO>()
@@ -81,7 +81,7 @@ namespace PD.Workademy.Todo.Web.Controllers
 
         //UPDATE
         [HttpPut]
-        public async Task<ActionResult> UpdateTodoItem(Guid Id, TodoItemDTO newTodoItem)
+        public async Task<ActionResult> UpdateTodoItemAsync(Guid Id, TodoItemDTO newTodoItem)
         {
             List<TodoItemDTO> todoItems =
                new List<TodoItemDTO>()
