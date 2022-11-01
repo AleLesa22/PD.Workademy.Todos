@@ -12,6 +12,8 @@ namespace PD.Workademy.Todo.Infrastructure.Persistance
 {
     public class ApplicationDbContext: DbContext
     {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+
         //entities
         public DbSet<User> Users { get; set; }
         public DbSet<TodoItem> Todoitems { get; set; }
@@ -20,9 +22,10 @@ namespace PD.Workademy.Todo.Infrastructure.Persistance
 
         //OnConfiguring method
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"Server=localhost;Database=Todo;Trusted_Connection=True;");
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer(@"Server=localhost;Database=Todo;Trusted_Connection=True;");
+        //}
+
     }
 }
