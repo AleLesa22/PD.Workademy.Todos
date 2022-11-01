@@ -8,7 +8,7 @@ namespace PD.Workademy.Todo.Web.Controllers
     public class TodoItemsController : ApiBaseController
     {
         [HttpGet]
-        public async Task<ActionResult> GetAllTodoItems()
+        public async Task<ActionResult> GetAllTodoItemsAsync()
         {
                 List<TodoItemDTO> todoItems =
                 new List<TodoItemDTO>()

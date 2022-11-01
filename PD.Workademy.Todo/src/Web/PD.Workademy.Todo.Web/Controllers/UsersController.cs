@@ -8,7 +8,7 @@ namespace PD.Workademy.Todo.Web.Controllers
     public class UsersController : ApiBaseController
     {
         [HttpGet]
-        public async Task<ActionResult> GetAllOfUsers()
+        public async Task<ActionResult> GetAllOfUsersAsync()
         {
             List<UserDTO> GetAllOfUsers()
             {

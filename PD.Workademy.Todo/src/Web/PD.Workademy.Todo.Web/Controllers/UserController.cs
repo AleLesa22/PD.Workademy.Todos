@@ -9,7 +9,7 @@ namespace PD.Workademy.Todo.Web.Controllers
     {
         //ADD USER
         [HttpPost]
-        public async Task<ActionResult> AddUser([FromBody] UserDTO request)
+        public async Task<ActionResult> AddUserAsync([FromBody] UserDTO request)
         {
             List<UserDTO> AddUsers(UserDTO request)
             {
@@ -33,7 +33,7 @@ namespace PD.Workademy.Todo.Web.Controllers
 
         //DELETE USER
         [HttpDelete]
-        public async Task<ActionResult> DeleteUser(Guid Id)
+        public async Task<ActionResult> DeleteUserAsync(Guid Id)
         {
             List<UserDTO> DeleteUser(Guid Id)
             {
@@ -54,7 +54,7 @@ namespace PD.Workademy.Todo.Web.Controllers
 
         //GET USER
         [HttpGet]
-        public async Task<ActionResult> GetUserById(Guid Id)
+        public async Task<ActionResult> GetUserByIdAsync(Guid Id)
         {
             UserDTO GetUser(Guid Id)
             {
@@ -74,7 +74,7 @@ namespace PD.Workademy.Todo.Web.Controllers
 
         //UPDATE USER
         [HttpPut]
-        public async Task<ActionResult> UpdateUser(Guid Id, UserDTO request)
+        public async Task<ActionResult> UpdateUserAsync(Guid Id, UserDTO request)
         {
             List<UserDTO> UpdateUser(Guid Id, UserDTO request)
             {

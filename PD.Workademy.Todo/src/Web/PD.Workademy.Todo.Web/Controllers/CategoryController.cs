@@ -9,7 +9,7 @@ namespace PD.Workademy.Todo.Web.Controllers
     {
         //ENDPOINTS POST,GET,PUT,DELETE
         [HttpGet]
-        public async Task<ActionResult> GetAllCategories()
+        public async Task<ActionResult> GetAllCategoriesAsync()
         {
             List<CategoryDTO> GetAllCategories()
             {
@@ -31,7 +31,7 @@ namespace PD.Workademy.Todo.Web.Controllers
 
 
         [HttpPost]
-        public async Task<ActionResult> AddCategory([FromBody] CategoryDTO request)
+        public async Task<ActionResult> AddCategoryAsync([FromBody] CategoryDTO request)
         {
             List<CategoryDTO> AddCategory(CategoryDTO request)
             {
@@ -55,7 +55,7 @@ namespace PD.Workademy.Todo.Web.Controllers
 
 
         [HttpGet("/GetCategoryById")]
-        public async Task<ActionResult> GetCategoryById(Guid Id)
+        public async Task<ActionResult> GetCategoryByIdAsync(Guid Id)
         {
             CategoryDTO GetCategory(Guid Id)
             {
@@ -74,7 +74,7 @@ namespace PD.Workademy.Todo.Web.Controllers
 
 
         [HttpDelete]
-        public async Task<ActionResult> DeleteCategory(Guid Id)
+        public async Task<ActionResult> DeleteCategoryAsync(Guid Id)
         {
             List<CategoryDTO> DeleteCategory(Guid Id)
             {
@@ -95,7 +95,7 @@ namespace PD.Workademy.Todo.Web.Controllers
 
 
         [HttpPut]
-        public async Task<ActionResult> UpdateCategory(Guid Id, CategoryDTO request)
+        public async Task<ActionResult> UpdateCategoryAsync(Guid Id, CategoryDTO request)
         {
             List<CategoryDTO> UpdateCategory(Guid Id, CategoryDTO request)
             {
