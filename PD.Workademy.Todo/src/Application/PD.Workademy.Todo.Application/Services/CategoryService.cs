@@ -9,6 +9,7 @@ namespace PD.Workademy.Todo.Application.Services
 {
     public class CategoryService:ICategoryService
     {
+
         public List<Category> AddCategory(Category request)
         {
             List<Category> categories = new()
@@ -76,5 +77,6 @@ namespace PD.Workademy.Todo.Application.Services
 
             return categoryToUpdate;
         }
+
     }
 }

@@ -783,6 +783,19 @@
           }
         }
       },
+      "PD.Workademy.Todo.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PD.Workademy.Todo.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PD.Workademy.Todo.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PD.Workademy.Todo.Application.dll": {}
+        }
+      },
       "PD.Workademy.Todo.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2014,6 +2027,11 @@
         "version.txt"
       ]
     },
+    "PD.Workademy.Todo.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Application/PD.Workademy.Todo.Application/PD.Workademy.Todo.Application.csproj",
+      "msbuildProject": "../../Application/PD.Workademy.Todo.Application/PD.Workademy.Todo.Application.csproj"
+    },
     "PD.Workademy.Todo.Domain/1.0.0": {
       "type": "project",
       "path": "../../Domain/PD.Workademy.Todo.Domain/PD.Workademy.Todo.Domain.csproj",
@@ -2026,7 +2044,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.10",
-      "PD.Workademy.Todo.Domain >= 1.0.0"
+      "PD.Workademy.Todo.Application >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2062,8 +2080,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\avidakovic\\Desktop\\GIT_FINAL_TODO\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Domain\\PD.Workademy.Todo.Domain\\PD.Workademy.Todo.Domain.csproj": {
-              "projectPath": "C:\\Users\\avidakovic\\Desktop\\GIT_FINAL_TODO\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Domain\\PD.Workademy.Todo.Domain\\PD.Workademy.Todo.Domain.csproj"
+            "C:\\Users\\avidakovic\\Desktop\\GIT_FINAL_TODO\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\PD.Workademy.Todo.Application.csproj": {
+              "projectPath": "C:\\Users\\avidakovic\\Desktop\\GIT_FINAL_TODO\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\PD.Workademy.Todo.Application.csproj"
             }
           }
         }
