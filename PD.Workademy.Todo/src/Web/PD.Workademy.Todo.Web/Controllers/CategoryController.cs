@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PD.Workademy.Todo.Application.Services;
 using PD.Workademy.Todo.Web.ApiModels;
 
 namespace PD.Workademy.Todo.Web.Controllers
@@ -7,6 +8,21 @@ namespace PD.Workademy.Todo.Web.Controllers
     
     public class CategoryController : ApiBaseController
     {
+
+        private readonly ICategoryService _categoryService;
+        public CategoryController(ICategoryService categoryService)
+        {
+            _categoryService = categoryService;
+        }
+
+        [HttpGet("/CategoriesDI")]
+        public async Task<ActionResult> GetCategoriesAsync()
+        {
+            var categories = _categoryService.GetCategories().Select(x => new CategoryDTO(x.Id, x.Name));
+            return Ok(categories);
+        }
+
+
         //ENDPOINTS POST,GET,PUT,DELETE
         [HttpGet]
         public async Task<ActionResult> GetAllCategoriesAsync()

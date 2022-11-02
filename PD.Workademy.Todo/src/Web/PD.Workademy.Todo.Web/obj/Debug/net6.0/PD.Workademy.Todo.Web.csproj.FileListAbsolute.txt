@@ -145,3 +145,5 @@ C:\Users\avidakovic\Desktop\GIT_FINAL_TODO\PD.Workademy.Todos\PD.Workademy.Todo\
 C:\Users\avidakovic\Desktop\GIT_FINAL_TODO\PD.Workademy.Todos\PD.Workademy.Todo\src\Web\PD.Workademy.Todo.Web\bin\Debug\net6.0\PD.Workademy.Todo.Infrastructure.dll
 C:\Users\avidakovic\Desktop\GIT_FINAL_TODO\PD.Workademy.Todos\PD.Workademy.Todo\src\Web\PD.Workademy.Todo.Web\bin\Debug\net6.0\PD.Workademy.Todo.Infrastructure.pdb
 C:\Users\avidakovic\Desktop\GIT_FINAL_TODO\PD.Workademy.Todos\PD.Workademy.Todo\src\Web\PD.Workademy.Todo.Web\bin\Debug\net6.0\PD.Workademy.Todo.Domain.pdb
+C:\Users\avidakovic\Desktop\GIT_FINAL_TODO\PD.Workademy.Todos\PD.Workademy.Todo\src\Web\PD.Workademy.Todo.Web\bin\Debug\net6.0\PD.Workademy.Todo.Application.dll
+C:\Users\avidakovic\Desktop\GIT_FINAL_TODO\PD.Workademy.Todos\PD.Workademy.Todo\src\Web\PD.Workademy.Todo.Web\bin\Debug\net6.0\PD.Workademy.Todo.Application.pdb
