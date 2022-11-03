@@ -12,8 +12,8 @@ namespace PD.Workademy.Todo.Application.Services
     public class CategoryService:ICategoryService
     {
 
-        private readonly ICategoryServiceRepository _categoryServiceRepository;
-        public CategoryService(ICategoryServiceRepository categoryServiceRepository)
+        private readonly ICategoryRepository _categoryServiceRepository;
+        public CategoryService(ICategoryRepository categoryServiceRepository)
         {
             _categoryServiceRepository = categoryServiceRepository;
         }
@@ -57,9 +57,9 @@ namespace PD.Workademy.Todo.Application.Services
         }
 
         //Update Category By Id
-        public CategoryDTO UpdateCategory(Guid Id, CategoryDTO request)
+        public CategoryDTO UpdateCategory(CategoryDTO request)
         {
-            Category category = _categoryServiceRepository.GetCategoryById(Id);
+            Category category = _categoryServiceRepository.GetCategoryById(request.Id);
             category.Id = request.Id;
             category.Name = request.Name;
             CategoryDTO categoryDTO = new CategoryDTO(category.Id, category.Name);

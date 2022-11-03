@@ -40,9 +40,9 @@ namespace PD.Workademy.Todo.Web.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult> UpdateCategoryAsync(Guid Id,CategoryDTO request)
+        public async Task<ActionResult> UpdateCategoryAsync(CategoryDTO request)
         {
-            return Ok(_categoryService.UpdateCategory(Id,request));
+            return Ok(_categoryService.UpdateCategory(request));
         }
 
     }

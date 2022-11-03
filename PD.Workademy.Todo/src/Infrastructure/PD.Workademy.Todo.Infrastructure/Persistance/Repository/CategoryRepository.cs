@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace PD.Workademy.Todo.Infrastructure.Persistance.Repository
 {
-    public class CategoryServiceRepository : ICategoryServiceRepository
+    public class CategoryRepository : ICategoryRepository
     {
         public static List<Category> categories = new()
         {
@@ -38,8 +38,8 @@ namespace PD.Workademy.Todo.Infrastructure.Persistance.Repository
 
         public IEnumerable<Category> GetCategories()
         {
-            var getCategories = categories.Select(x => new Category(x.Id, x.Name));
-            return getCategories;
+            var Categories = categories.Select(x => new Category(x.Id, x.Name));
+            return Categories;
         }
 
         public Category GetCategoryById(Guid Id)
@@ -48,9 +48,9 @@ namespace PD.Workademy.Todo.Infrastructure.Persistance.Repository
             return category;
         }
 
-        public Category UpdateCategory(Guid Id, Category request)
+        public Category UpdateCategory(Category request)
         {
-            Category category = categories.Find(x => x.Id == Id);
+            Category category = categories.Find(x => x.Id == request.Id);
             category.Id = request.Id;
             category.Name = request.Name;
             return category;

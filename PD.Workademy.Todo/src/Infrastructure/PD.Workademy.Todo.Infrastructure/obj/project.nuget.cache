@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o7RSzW1y7zlCf7VoDmVakQVRCjeAl/xapab/vXvddw67m2MdeFtHXwvyR0tBi/4h4done7fqUKURw888FaHxBw==",
+  "dgSpecHash": "Y8StxYBJG6ngrdrikFwWe4z8slZuYIkckQ7xouUjtfo1CdGIeiL9lCPcM6xlCg/9FBw6d3UTj99sptplzslHCw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\GIT_FINAL_TODO\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\GIT LAST COMMIT\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\avidakovic\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
