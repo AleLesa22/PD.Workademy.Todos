@@ -1,4 +1,5 @@
 ﻿using PD.Workademy.Todo.Domain.Entities;
+using PD.Workademy.Todo.Domain.SharedKernel.Interfaces.Repositories;
 using PD.Workademy.Todo.Web.ApiModels;
 using System;
 using System.Collections.Generic;
@@ -10,44 +11,55 @@ namespace PD.Workademy.Todo.Application.Services
 {
     public class CategoryService:ICategoryService
     {
-        public static List<Category> categories = new()
-            {
-                new Category(new Guid("747394a8-3712-4743-a2d1-521d2df10223"), "Easy"),
-                new Category(new Guid("e7efd2aa-ceac-45af-9421-7cb0d95ab272"), "Medium"),
-                new Category(new Guid("c81382f5-55ae-4617-b911-9a48f9bb5892"), "Hard")
-            };
 
+        private readonly ICategoryServiceRepository _categoryServiceRepository;
+        public CategoryService(ICategoryServiceRepository categoryServiceRepository)
+        {
+            _categoryServiceRepository = categoryServiceRepository;
+        }
+
+        //Add Category
         public CategoryDTO AddCategory(CategoryDTO request)
         {
-            Category category = new Category(request.Id,request.Name);
-            categories.Add(category);
-            return request;
+            Category categoryToAdd = new Category(request.Id, request.Name);
+            _categoryServiceRepository.AddCategory(categoryToAdd);
+
+            CategoryDTO category = new CategoryDTO()
+            {
+                Id = request.Id,
+                Name = request.Name,
+            };
+            return category;
         }
+        
+        //Delete Category
 
         public CategoryDTO DeleteCategory(Guid Id)
         {
-            Category category = categories.Find(x => x.Id == Id);
-            CategoryDTO categoryDTO = new CategoryDTO(category.Id, category.Name);
-            categories.Remove(category);
-            return categoryDTO;
+            Category categoryToDelete = _categoryServiceRepository.DeleteCategory(Id);
+            CategoryDTO category = new CategoryDTO(categoryToDelete.Id, categoryToDelete.Name);
+            return category;
         }
 
+        //Get All Categories
         public IEnumerable<CategoryDTO> GetCategories()
         {
-            var getCategories = categories.Select(x => new CategoryDTO(x.Id,x.Name));
-            return getCategories;
-         }
+            var categories = _categoryServiceRepository.GetCategories();
+            return categories.Select(x => new CategoryDTO(x.Id, x.Name));
+        }
 
+        //Get Category By Id
         public CategoryDTO GetCategoryById(Guid Id)
         {
-            Category category = categories.Find(x => x.Id == Id);
+            Category category = _categoryServiceRepository.GetCategoryById(Id);
             CategoryDTO categoryDTO = new CategoryDTO(category.Id, category.Name);
             return categoryDTO;
         }
 
+        //Update Category By Id
         public CategoryDTO UpdateCategory(Guid Id, CategoryDTO request)
         {
-            Category category = categories.Find(x => x.Id == Id);
+            Category category = _categoryServiceRepository.GetCategoryById(Id);
             category.Id = request.Id;
             category.Name = request.Name;
             CategoryDTO categoryDTO = new CategoryDTO(category.Id, category.Name);
