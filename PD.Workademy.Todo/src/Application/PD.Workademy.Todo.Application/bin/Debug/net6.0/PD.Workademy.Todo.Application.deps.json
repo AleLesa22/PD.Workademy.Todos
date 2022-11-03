@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "PD.Workademy.Todo.Application/1.0.0": {
+        "dependencies": {
+          "PD.Workademy.Todo.Domain": "1.0.0"
+        },
         "runtime": {
           "PD.Workademy.Todo.Application.dll": {}
+        }
+      },
+      "PD.Workademy.Todo.Domain/1.0.0": {
+        "runtime": {
+          "PD.Workademy.Todo.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "PD.Workademy.Todo.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PD.Workademy.Todo.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

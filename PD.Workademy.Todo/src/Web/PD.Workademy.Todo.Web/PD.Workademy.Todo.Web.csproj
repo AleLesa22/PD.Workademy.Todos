@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Application\PD.Workademy.Todo.Application\PD.Workademy.Todo.Application.csproj" />
     <ProjectReference Include="..\..\Infrastructure\PD.Workademy.Todo.Infrastructure\PD.Workademy.Todo.Infrastructure.csproj" />
   </ItemGroup>
 

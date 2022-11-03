@@ -22,3 +22,21 @@ C:\Users\avidakovic\Desktop\GIT_FINAL_TODO\PD.Workademy.Todos\PD.Workademy.Todo\
 C:\Users\avidakovic\Desktop\GIT_FINAL_TODO\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\refint\PD.Workademy.Todo.Application.dll
 C:\Users\avidakovic\Desktop\GIT_FINAL_TODO\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\PD.Workademy.Todo.Application.pdb
 C:\Users\avidakovic\Desktop\GIT_FINAL_TODO\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\ref\PD.Workademy.Todo.Application.dll
+C:\Users\avidakovic\Desktop\GIT_FINAL_TODO\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\bin\Debug\net6.0\PD.Workademy.Todo.Domain.dll
+C:\Users\avidakovic\Desktop\GIT_FINAL_TODO\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\bin\Debug\net6.0\PD.Workademy.Todo.Domain.pdb
+C:\Users\avidakovic\Desktop\GIT_FINAL_TODO\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\PD.Workademy.Todo.Application.csproj.CopyComplete
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\bin\Debug\net6.0\PD.Workademy.Todo.Application.deps.json
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\bin\Debug\net6.0\PD.Workademy.Todo.Application.dll
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\bin\Debug\net6.0\PD.Workademy.Todo.Application.pdb
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\bin\Debug\net6.0\PD.Workademy.Todo.Domain.dll
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\bin\Debug\net6.0\PD.Workademy.Todo.Domain.pdb
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\PD.Workademy.Todo.Application.csproj.AssemblyReference.cache
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\PD.Workademy.Todo.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\PD.Workademy.Todo.Application.AssemblyInfoInputs.cache
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\PD.Workademy.Todo.Application.AssemblyInfo.cs
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\PD.Workademy.Todo.Application.csproj.CoreCompileInputs.cache
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\PD.Workademy.Todo.Application.csproj.CopyComplete
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\PD.Workademy.Todo.Application.dll
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\refint\PD.Workademy.Todo.Application.dll
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\PD.Workademy.Todo.Application.pdb
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Application\PD.Workademy.Todo.Application\obj\Debug\net6.0\ref\PD.Workademy.Todo.Application.dll

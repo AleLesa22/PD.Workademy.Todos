@@ -858,6 +858,19 @@
           }
         }
       },
+      "PD.Workademy.Todo.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PD.Workademy.Todo.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PD.Workademy.Todo.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PD.Workademy.Todo.Application.dll": {}
+        }
+      },
       "PD.Workademy.Todo.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -874,7 +887,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
-          "PD.Workademy.Todo.Domain": "1.0.0"
+          "PD.Workademy.Todo.Application": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PD.Workademy.Todo.Infrastructure.dll": {}
@@ -2204,6 +2217,11 @@
         "version.txt"
       ]
     },
+    "PD.Workademy.Todo.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Application/PD.Workademy.Todo.Application/PD.Workademy.Todo.Application.csproj",
+      "msbuildProject": "../../Application/PD.Workademy.Todo.Application/PD.Workademy.Todo.Application.csproj"
+    },
     "PD.Workademy.Todo.Domain/1.0.0": {
       "type": "project",
       "path": "../../Domain/PD.Workademy.Todo.Domain/PD.Workademy.Todo.Domain.csproj",
@@ -2219,6 +2237,7 @@
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.10",
+      "PD.Workademy.Todo.Application >= 1.0.0",
       "PD.Workademy.Todo.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -2230,11 +2249,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\avidakovic\\Desktop\\GIT_FINAL_TODO\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Web\\PD.Workademy.Todo.Web\\PD.Workademy.Todo.Web.csproj",
+      "projectUniqueName": "C:\\Users\\avidakovic\\Desktop\\GIT LAST COMMIT\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Web\\PD.Workademy.Todo.Web\\PD.Workademy.Todo.Web.csproj",
       "projectName": "PD.Workademy.Todo.Web",
-      "projectPath": "C:\\Users\\avidakovic\\Desktop\\GIT_FINAL_TODO\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Web\\PD.Workademy.Todo.Web\\PD.Workademy.Todo.Web.csproj",
+      "projectPath": "C:\\Users\\avidakovic\\Desktop\\GIT LAST COMMIT\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Web\\PD.Workademy.Todo.Web\\PD.Workademy.Todo.Web.csproj",
       "packagesPath": "C:\\Users\\avidakovic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\avidakovic\\Desktop\\GIT_FINAL_TODO\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Web\\PD.Workademy.Todo.Web\\obj\\",
+      "outputPath": "C:\\Users\\avidakovic\\Desktop\\GIT LAST COMMIT\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Web\\PD.Workademy.Todo.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2256,8 +2275,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\avidakovic\\Desktop\\GIT_FINAL_TODO\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\avidakovic\\Desktop\\GIT_FINAL_TODO\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj"
+            "C:\\Users\\avidakovic\\Desktop\\GIT LAST COMMIT\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\PD.Workademy.Todo.Application.csproj": {
+              "projectPath": "C:\\Users\\avidakovic\\Desktop\\GIT LAST COMMIT\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\PD.Workademy.Todo.Application.csproj"
+            },
+            "C:\\Users\\avidakovic\\Desktop\\GIT LAST COMMIT\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\avidakovic\\Desktop\\GIT LAST COMMIT\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Infrastructure\\PD.Workademy.Todo.Infrastructure\\PD.Workademy.Todo.Infrastructure.csproj"
             }
           }
         }
