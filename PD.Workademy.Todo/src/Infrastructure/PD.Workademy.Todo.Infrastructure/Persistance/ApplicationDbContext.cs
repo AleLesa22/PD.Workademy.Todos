@@ -20,12 +20,5 @@ namespace PD.Workademy.Todo.Infrastructure.Persistance
 
         public DbSet<Category> Categories { get; set; }
 
-        //OnConfiguring method
-
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer(@"Server=localhost;Database=Todo;Trusted_Connection=True;");
-        //}
-
     }
 }
