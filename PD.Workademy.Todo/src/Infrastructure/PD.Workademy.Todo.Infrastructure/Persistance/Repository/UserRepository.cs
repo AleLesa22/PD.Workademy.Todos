@@ -48,8 +48,8 @@ namespace PD.Workademy.Todo.Infrastructure.Persistance.Repository
 
         public User UpdateUser(User request)
         {
-            User user = _dbContext.Users.First(x => x.Id == request.Id);
-            user.Id = request.Id;
+            User user = _dbContext.Users.FirstOrDefault(x => x.Id == request.Id);
+            //user.Id = request.Id;
             user.FirstName = request.FirstName;
             user.LastName = request.LastName;
             _dbContext.SaveChanges();

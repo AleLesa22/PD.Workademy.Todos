@@ -54,10 +54,12 @@ namespace PD.Workademy.Todo.Application.Services
 
         public UserDTO UpdateUser(UserDTO request)
         {
-            User user = _userServiceRepository.GetUserById(request.Id);
+            User user = new User(request.Id, request.FirstName, request.LastName);
+            _userServiceRepository.UpdateUser(user);
             user.Id = request.Id;
             user.FirstName = request.FirstName;
             user.LastName = request.LastName;
+
             UserDTO userDTO = new UserDTO(user.Id, user.FirstName, user.LastName);
             return userDTO;
         }

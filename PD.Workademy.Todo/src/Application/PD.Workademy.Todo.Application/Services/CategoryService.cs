@@ -59,7 +59,8 @@ namespace PD.Workademy.Todo.Application.Services
         //Update Category By Id
         public CategoryDTO UpdateCategory(CategoryDTO request)
         {
-            Category category = _categoryServiceRepository.GetCategoryById(request.Id);
+            //Category category = _categoryServiceRepository.GetCategoryById(request.Id);
+            Category category = new Category(request.Id, request.Name);
             category.Id = request.Id;
             category.Name = request.Name;
             CategoryDTO categoryDTO = new CategoryDTO(category.Id, category.Name);
