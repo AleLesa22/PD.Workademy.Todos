@@ -15,6 +15,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<ICategoryService, CategoryService>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 
+builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IUserRepository, UserRepository>();
+
+
 //Dependancy for DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
