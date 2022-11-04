@@ -12,47 +12,50 @@ namespace PD.Workademy.Todo.Infrastructure.Persistance.Repository
 {
     public class CategoryRepository : ICategoryRepository
     {
-        public static List<Category> categories = new()
+        private readonly ApplicationDbContext _dbContext;
+
+        public CategoryRepository(ApplicationDbContext dbContext)
         {
-                new Category(new Guid("747394a8-3712-4743-a2d1-521d2df10223"), "Easy"),
-                new Category(new Guid("e7efd2aa-ceac-45af-9421-7cb0d95ab272"), "Medium"),
-                new Category(new Guid("c81382f5-55ae-4617-b911-9a48f9bb5892"), "Hard")
-        };
+            _dbContext = dbContext;
+        }
 
         //Add Category
         public Category AddCategory(Category request)
         {
-            Category category = new Category(request.Id, request.Name);
-            categories.Add(category);
+            _dbContext.Categories.Add(request);
+            _dbContext.SaveChanges();
+
             return request;
         }
 
         //Delete Category
         public Category DeleteCategory(Guid Id)
         {
-            Category category = categories.Find(x => x.Id == Id);
-            categories.Remove(category);
-            return category;
+            Category categoryToDelete = _dbContext.Categories.First(x => x.Id == Id);
+            _dbContext.Categories.Remove(categoryToDelete);
+            _dbContext.SaveChanges();
+
+            return categoryToDelete;
         }
 
 
         public IEnumerable<Category> GetCategories()
         {
-            var Categories = categories.Select(x => new Category(x.Id, x.Name));
-            return Categories;
+            return _dbContext.Categories;
         }
 
         public Category GetCategoryById(Guid Id)
         {
-            Category category = categories.Find(x => x.Id == Id);
+            Category category = _dbContext.Categories.First(x => x.Id == Id);
             return category;
         }
 
         public Category UpdateCategory(Category request)
         {
-            Category category = categories.Find(x => x.Id == request.Id);
+            Category category = _dbContext.Categories.First(x => x.Id == request.Id);
             category.Id = request.Id;
             category.Name = request.Name;
+            _dbContext.SaveChanges();
             return category;
         }
     }

@@ -214,3 +214,4 @@ C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo
 C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Web\PD.Workademy.Todo.Web\obj\Debug\net6.0\PD.Workademy.Todo.Web.csproj.CopyComplete
 C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Web\PD.Workademy.Todo.Web\obj\Debug\net6.0\PD.Workademy.Todo.Web.genruntimeconfig.cache
 C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Web\PD.Workademy.Todo.Web\obj\Debug\net6.0\ref\PD.Workademy.Todo.Web.dll
+C:\Users\avidakovic\Desktop\GIT LAST COMMIT\PD.Workademy.Todos\PD.Workademy.Todo\src\Web\PD.Workademy.Todo.Web\obj\Debug\net6.0\PD.Workademy.Todo.Web.MvcApplicationPartsAssemblyInfo.cs

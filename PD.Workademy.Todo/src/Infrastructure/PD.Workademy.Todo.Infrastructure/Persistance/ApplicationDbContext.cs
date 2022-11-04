@@ -20,12 +20,10 @@ namespace PD.Workademy.Todo.Infrastructure.Persistance
 
         public DbSet<Category> Categories { get; set; }
 
-        //OnConfiguring method
-
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer(@"Server=localhost;Database=Todo;Trusted_Connection=True;");
-        //}
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<TodoItem>().HasOne(b=>b.Category).WithMany(a=>a.TodoItems).OnDelete(DeleteBehavior.Restrict);
+        }
 
     }
 }

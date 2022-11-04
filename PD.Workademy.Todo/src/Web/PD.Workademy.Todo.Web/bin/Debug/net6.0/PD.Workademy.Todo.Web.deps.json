@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.Design": "6.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "PD.Workademy.Todo.Application": "1.0.0",
           "PD.Workademy.Todo.Infrastructure": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
