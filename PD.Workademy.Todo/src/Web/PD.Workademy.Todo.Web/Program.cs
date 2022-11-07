@@ -18,7 +18,8 @@ builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 
-
+builder.Services.AddTransient<ITodoItemService, TodoItemService>();
+builder.Services.AddTransient<ITodoItemRepository, TodoItemRepository>();
 //Dependancy for DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
