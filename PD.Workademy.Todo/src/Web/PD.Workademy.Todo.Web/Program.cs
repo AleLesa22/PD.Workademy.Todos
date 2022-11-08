@@ -3,31 +3,14 @@ using PD.Workademy.Todo.Application.Services;
 using PD.Workademy.Todo.Domain.SharedKernel.Interfaces.Repositories;
 using PD.Workademy.Todo.Infrastructure.Persistance;
 using PD.Workademy.Todo.Infrastructure.Persistance.Repository;
+using PD.Workademy.Todo.Web;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-builder.Services.AddTransient<ICategoryService, CategoryService>();
-builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
-
-builder.Services.AddTransient<IUserService, UserService>();
-builder.Services.AddTransient<IUserRepository, UserRepository>();
-
-builder.Services.AddTransient<ITodoItemService, TodoItemService>();
-builder.Services.AddTransient<ITodoItemRepository, TodoItemRepository>();
-//Dependancy for DbContext
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Todo"));
-});
-
+var startup = new Startup(builder.Configuration);
+startup.ConfigureServices(builder.Services);
 
 var app = builder.Build();
+startup.Configure(app);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -39,7 +22,5 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
-app.MapControllers();
 
 app.Run();
