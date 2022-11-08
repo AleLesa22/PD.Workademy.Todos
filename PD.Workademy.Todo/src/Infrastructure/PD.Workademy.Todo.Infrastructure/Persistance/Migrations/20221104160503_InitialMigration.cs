@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace PD.Workademy.Todo.Infrastructure.Migrations
+namespace PD.Workademy.Todo.Infrastructure.Persistance.Migrations
 {
     public partial class InitialMigration : Migration
     {

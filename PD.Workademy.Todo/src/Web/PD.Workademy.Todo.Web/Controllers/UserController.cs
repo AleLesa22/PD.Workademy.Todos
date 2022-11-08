@@ -14,13 +14,6 @@ namespace PD.Workademy.Todo.Web.Controllers
             _userService = userService;
         }
 
-        //ADD USER
-        [HttpGet("GetAllUsers")]
-        public async Task<ActionResult> GetAllUsersAsync()
-        {
-            return Ok(_userService.GetUsers());
-        }
-
         [HttpGet]
         public async Task<ActionResult> GetUserAsync(Guid Id)
         {

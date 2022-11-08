@@ -15,11 +15,6 @@ namespace PD.Workademy.Todo.Web.Controllers
             _categoryService = categoryService;
         }
 
-        [HttpGet("GetAllCategories")]
-        public async Task<ActionResult> GetAllCategoriesAsync()
-        {
-            return Ok(_categoryService.GetCategories());
-        }
 
         [HttpGet]
         public async Task<ActionResult> GetCategoryAsync(Guid Id)
