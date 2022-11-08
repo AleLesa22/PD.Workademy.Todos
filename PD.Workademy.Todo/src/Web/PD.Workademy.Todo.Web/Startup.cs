@@ -21,11 +21,8 @@ namespace PD.Workademy.Todo.Web
             services.AddSwaggerGen();
 
             //Dependancies
-            services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
-            services.AddTransient<IUserService, UserService>();
             services.AddTransient<IUserRepository, UserRepository>();
-            services.AddTransient<ITodoItemService, TodoItemService>();
             services.AddTransient<ITodoItemRepository, TodoItemRepository>();
             services.AddDbContext<ApplicationDbContext>(options =>
             {
