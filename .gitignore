@@ -454,7 +454,10 @@ $RECYCLE.BIN/
 !.vscode/extensions.json
 
 ##
-bin/
-obj/
-Debug/
-Release/
+*/bin/
+*/obj/
+*/Debug/
+*/Release/
+.vs/*
+
+.vs/pd-workademy-todos/v17/.suo

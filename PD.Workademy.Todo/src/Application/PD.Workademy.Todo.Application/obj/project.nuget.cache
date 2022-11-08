@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "MYajnpONF9aylgchrUnd9xfcuL/8niYbTwpn1LZvLUUgZygx+P33JeOjD1WVy58AC45aD+Bdz2wK/I3V8dQaow==",
+  "dgSpecHash": "4B8SILtP7UB7saWQWy3IC/wxMQv+z9ZZAxA4UQUWEuhD5unBm4SgW3RvZiWYu1LswqKQcVbDM7HNOYbwIlyqvw==",
   "success": true,
   "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\GIT LAST COMMIT\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Application\\PD.Workademy.Todo.Application\\PD.Workademy.Todo.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\avidakovic\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
