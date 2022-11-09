@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using PD.Workademy.Todo.Application;
 using PD.Workademy.Todo.Application.Services;
 using PD.Workademy.Todo.Domain.SharedKernel.Interfaces.Repositories;
+using PD.Workademy.Todo.Infrastructure;
 using PD.Workademy.Todo.Infrastructure.Persistance;
 using PD.Workademy.Todo.Infrastructure.Persistance.Repository;
 using PD.Workademy.Todo.Web;
@@ -13,6 +14,10 @@ startup.ConfigureServices(builder.Services);
 
 var startupApplication = new StartupApplication(builder.Configuration);
 startupApplication.ConfigureServices(builder.Services);
+
+
+var startupInfrastructure = new StartupInfrastructure(builder.Configuration);
+startupInfrastructure.ConfigureServices(builder.Services);
 
 var app = builder.Build();
 startup.Configure(app);
