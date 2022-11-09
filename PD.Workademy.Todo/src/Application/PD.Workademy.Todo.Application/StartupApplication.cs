@@ -26,7 +26,5 @@ namespace PD.Workademy.Todo.Application
             services.AddTransient<ITodoItemService, TodoItemService>();
             
         }
-
-
     }
 }

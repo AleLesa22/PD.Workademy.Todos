@@ -14,7 +14,6 @@ startup.ConfigureServices(builder.Services);
 var startupApplication = new StartupApplication(builder.Configuration);
 startupApplication.ConfigureServices(builder.Services);
 
-
 var app = builder.Build();
 startup.Configure(app);
 
