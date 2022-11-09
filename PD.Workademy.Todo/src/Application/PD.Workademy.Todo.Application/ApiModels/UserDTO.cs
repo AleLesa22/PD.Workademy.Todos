@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace PD.Workademy.Todo.Web.ApiModels
+﻿namespace PD.Workademy.Todo.Web.ApiModels
 {
     public class UserDTO
     {

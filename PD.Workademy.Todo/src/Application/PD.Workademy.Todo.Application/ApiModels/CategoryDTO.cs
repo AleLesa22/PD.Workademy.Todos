@@ -1,6 +1,4 @@
-﻿using System.Security.Principal;
-
-namespace PD.Workademy.Todo.Web.ApiModels
+﻿namespace PD.Workademy.Todo.Web.ApiModels
 {
     public class CategoryDTO
     {
@@ -16,7 +14,5 @@ namespace PD.Workademy.Todo.Web.ApiModels
         {
 
         }
-
-        
     }
 }
