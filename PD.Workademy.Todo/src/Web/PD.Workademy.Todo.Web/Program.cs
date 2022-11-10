@@ -1,8 +1,14 @@
 using PD.Workademy.Todo.Application;
 using PD.Workademy.Todo.Infrastructure;
 using PD.Workademy.Todo.Web;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog((context, config) =>
+{
+    config.ReadFrom.Configuration(context.Configuration);
+});
 
 var startup = new Startup(builder.Configuration);
 startup.ConfigureServices(builder.Services);
