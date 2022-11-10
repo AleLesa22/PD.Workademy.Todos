@@ -1,14 +1,9 @@
 ﻿using PD.Workademy.Todo.Domain.Entities;
 using PD.Workademy.Todo.Domain.SharedKernel.Interfaces.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PD.Workademy.Todo.Infrastructure.Persistance.Repository
 {
-    public class UserRepository:IUserRepository
+    public class UserRepository : IUserRepository
     {
         private readonly ApplicationDbContext _dbContext;
 

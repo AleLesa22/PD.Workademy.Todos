@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PD.Workademy.Todo.Application.Services;
 
 namespace PD.Workademy.Todo.Web.Controllers

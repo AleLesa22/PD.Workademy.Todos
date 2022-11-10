@@ -1,16 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PD.Workademy.Todo.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore.Design;
 
 namespace PD.Workademy.Todo.Infrastructure.Persistance
 {
-    public class ApplicationDbContext: DbContext
+    public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
@@ -22,7 +15,7 @@ namespace PD.Workademy.Todo.Infrastructure.Persistance
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<TodoItem>().HasOne(b=>b.Category).WithMany(a=>a.TodoItems).OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<TodoItem>().HasOne(b => b.Category).WithMany(a => a.TodoItems).OnDelete(DeleteBehavior.Restrict);
         }
 
     }

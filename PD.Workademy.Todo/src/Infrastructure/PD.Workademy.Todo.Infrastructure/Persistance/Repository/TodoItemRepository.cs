@@ -1,15 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PD.Workademy.Todo.Domain.Entities;
 using PD.Workademy.Todo.Domain.SharedKernel.Interfaces.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PD.Workademy.Todo.Infrastructure.Persistance.Repository
 {
-    public class TodoItemRepository:ITodoItemRepository
+    public class TodoItemRepository : ITodoItemRepository
     {
         private readonly ApplicationDbContext _dbContext;
         public TodoItemRepository(ApplicationDbContext dbContext)
@@ -22,7 +17,7 @@ namespace PD.Workademy.Todo.Infrastructure.Persistance.Repository
             _dbContext.Add(request);
             _dbContext.SaveChanges();
 
-            return _dbContext.Todoitems.First(x=>x.Id==request.Id);
+            return _dbContext.Todoitems.First(x => x.Id == request.Id);
         }
 
         //Delete TodoItem
@@ -57,7 +52,7 @@ namespace PD.Workademy.Todo.Infrastructure.Persistance.Repository
             todoItemToUpdate.IsDone = request.IsDone;
             todoItemToUpdate.User = request.User;
             todoItemToUpdate.Category = request.Category;
-            
+
             _dbContext.SaveChanges();
             return todoItemToUpdate;
         }

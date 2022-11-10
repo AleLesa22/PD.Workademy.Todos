@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PD.Workademy.Todo.Application.Services;
 using PD.Workademy.Todo.Web.ApiModels;
-using System;
-using System.Collections.Generic;
 
 namespace PD.Workademy.Todo.Web.Controllers
 {

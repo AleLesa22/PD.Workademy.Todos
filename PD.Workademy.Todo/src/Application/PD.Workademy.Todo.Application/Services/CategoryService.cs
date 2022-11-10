@@ -1,11 +1,6 @@
 ﻿using PD.Workademy.Todo.Domain.Entities;
 using PD.Workademy.Todo.Domain.SharedKernel.Interfaces.Repositories;
 using PD.Workademy.Todo.Web.ApiModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PD.Workademy.Todo.Application.Services
 {
