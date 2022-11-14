@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PD.Workademy.Todo.Application.ApiModels;
 using PD.Workademy.Todo.Application.Services;
 
 namespace PD.Workademy.Todo.Web.Controllers
@@ -19,6 +20,12 @@ namespace PD.Workademy.Todo.Web.Controllers
         {
             _logger.LogInformation("GetTodoLogs");
             return Ok(_todoItemService.GetTodoItems());
+        }
+
+        [HttpGet("/TodoItemsSeparate")]
+        public async Task<ActionResult> GetTodoItemsSeparateAsync([FromQuery] TodoItemSeparateDTO todoItemSeparate)
+        {
+            return Ok(_todoItemService.GetSeparateTodos(todoItemSeparate));
         }
     }
 }

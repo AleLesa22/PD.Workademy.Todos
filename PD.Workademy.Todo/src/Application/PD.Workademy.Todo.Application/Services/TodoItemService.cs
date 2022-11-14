@@ -1,4 +1,5 @@
-﻿using PD.Workademy.Todo.Domain.Entities;
+﻿using PD.Workademy.Todo.Application.ApiModels;
+using PD.Workademy.Todo.Domain.Entities;
 using PD.Workademy.Todo.Domain.SharedKernel.Interfaces.Repositories;
 using PD.Workademy.Todo.Web.ApiModels;
 
@@ -83,7 +84,7 @@ namespace PD.Workademy.Todo.Application.Services
 
         public TodoItemDTO UpdateTodoItem(TodoItemDTO request)
         {
-            TodoItem todoItem = new TodoItem(request.Id, request.Title, request.Description, request.IsDone, 
+            TodoItem todoItem = new TodoItem(request.Id, request.Title, request.Description, request.IsDone,
                                 new Category(request.Category.Id, request.Category.Name),
                                 new User(request.User.Id, request.User.FirstName, request.User.LastName));
 
@@ -94,6 +95,21 @@ namespace PD.Workademy.Todo.Application.Services
                                       new UserDTO(request.User.Id, request.User.FirstName, request.User.LastName));
 
             return todoItemDTO;
+        }
+
+        public IEnumerable<TodoItemDTO> GetSeparateTodos(TodoItemSeparateDTO todoItemSeparate)
+        {
+            string Search = todoItemSeparate.Search ?? "";
+            string SortBy = todoItemSeparate.SortBy ?? "Id";
+            int Page = todoItemSeparate.Page == null || todoItemSeparate.Page == 0 ? 1 : todoItemSeparate.Page;
+            int PerPage = todoItemSeparate.PerPage == null || todoItemSeparate.PerPage == 0 ? 10 : todoItemSeparate.PerPage;
+            var todoItems = _todoItemServiceRepository.GetTodoItemsSeparate(Search, SortBy, Page, PerPage);
+
+            IEnumerable<TodoItemDTO> todoItemsDTO = todoItems.Select(x => new TodoItemDTO(x.Id, x.Title, x.Description, x.IsDone,
+                                                                          new CategoryDTO(x.Category.Id, x.Category.Name),
+                                                                          new UserDTO(x.User.Id, x.User.FirstName, x.User.LastName)));
+
+            return todoItemsDTO;
         }
     }
 }
