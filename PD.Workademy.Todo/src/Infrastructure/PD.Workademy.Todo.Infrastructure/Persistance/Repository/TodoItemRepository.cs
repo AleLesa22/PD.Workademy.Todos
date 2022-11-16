@@ -52,7 +52,6 @@ namespace PD.Workademy.Todo.Infrastructure.Persistance.Repository
                         || x.User.FirstName.Contains(Search)
                         || x.User.LastName.Contains(Search)).Skip((Page - 1) * PerPage).Take(PerPage).ToList();
 
-
             return todoItems;
         }
 

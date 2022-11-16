@@ -13,7 +13,6 @@ namespace PD.Workademy.Todo.Application.Services
             _todoItemServiceRepository = todoItemServiceRepository;
         }
 
-
         public TodoItemDTO AddTodoItem(TodoItemDTO request)
         {
             Category categoryToAdd = new Category(request.Category.Id, request.Category.Name);
