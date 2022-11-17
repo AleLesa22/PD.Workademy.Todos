@@ -43,6 +43,18 @@ namespace PD.Workademy.Todo.Infrastructure.Persistance.Repository
             return _dbContext.Todoitems.Include(x => x.Category).Include(x => x.User);
         }
 
+        public IEnumerable<TodoItem> GetTodoItemsSeparate(string Search, string SortBy, int Page, int PerPage)
+        {
+            var todoItems = _dbContext.Todoitems.Include(x => x.Category).Include(x => x.User).OrderBy(x => x[SortBy]).Where(x =>
+                           x.Title.Contains(Search)
+                        || x.Description.Contains(Search)
+                        || x.Category.Name.Contains(Search)
+                        || x.User.FirstName.Contains(Search)
+                        || x.User.LastName.Contains(Search)).Skip((Page - 1) * PerPage).Take(PerPage).ToList();
+
+            return todoItems;
+        }
+
         //Update TodoItem
         public TodoItem UpdateTodoItem(TodoItem request)
         {
