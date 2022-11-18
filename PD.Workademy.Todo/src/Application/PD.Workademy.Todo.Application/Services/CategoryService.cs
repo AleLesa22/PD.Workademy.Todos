@@ -4,7 +4,7 @@ using PD.Workademy.Todo.Web.ApiModels;
 
 namespace PD.Workademy.Todo.Application.Services
 {
-    public class CategoryService:ICategoryService
+    public class CategoryService : ICategoryService
     {
 
         private readonly ICategoryRepository _categoryServiceRepository;
@@ -26,7 +26,7 @@ namespace PD.Workademy.Todo.Application.Services
             };
             return category;
         }
-        
+
         //Delete Category
 
         public CategoryDTO DeleteCategory(Guid Id)
@@ -56,6 +56,7 @@ namespace PD.Workademy.Todo.Application.Services
         {
             //Category category = _categoryServiceRepository.GetCategoryById(request.Id);
             Category category = new Category(request.Id, request.Name);
+            _categoryServiceRepository.UpdateCategory(category);
             category.Id = request.Id;
             category.Name = request.Name;
             CategoryDTO categoryDTO = new CategoryDTO(category.Id, category.Name);

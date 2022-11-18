@@ -8,15 +8,20 @@ namespace PD.Workademy.Todo.Application.Services
     public class TodoItemService : ITodoItemService
     {
         private readonly ITodoItemRepository _todoItemServiceRepository;
-        public TodoItemService(ITodoItemRepository todoItemServiceRepository)
+        private readonly ICategoryRepository _categoryRepository;
+        private readonly IUserRepository _userRepository;
+
+        public TodoItemService(ITodoItemRepository todoItemServiceRepository, IUserRepository userRepository, ICategoryRepository categoryRepository)
         {
             _todoItemServiceRepository = todoItemServiceRepository;
+            _userRepository = userRepository;
+            _categoryRepository = categoryRepository;
         }
 
         public TodoItemDTO AddTodoItem(TodoItemDTO request)
         {
-            Category categoryToAdd = new Category(request.Category.Id, request.Category.Name);
-            User userToAdd = new User(request.User.Id, request.User.FirstName, request.User.LastName);
+            User user = _userRepository.GetUserById(request.User.Id);
+            Category category = _categoryRepository.GetCategoryById(request.Category.Id);
 
             TodoItem todoItem = new TodoItem()
             {
@@ -24,8 +29,8 @@ namespace PD.Workademy.Todo.Application.Services
                 Title = request.Title,
                 Description = request.Description,
                 IsDone = request.IsDone,
-                Category = categoryToAdd,
-                User = userToAdd
+                Category = category,
+                User = user
             };
 
             CategoryDTO categoryDTO = new CategoryDTO()
@@ -51,7 +56,7 @@ namespace PD.Workademy.Todo.Application.Services
                 User = userDTO
             };
 
-            TodoItem todoItemToAdd = _todoItemServiceRepository.AddTodoItem(todoItem);
+            _todoItemServiceRepository.AddTodoItem(new TodoItem(request.Id, request.Title, request.Description, request.IsDone, category, user));
             return todoItemDTO;
         }
 
@@ -83,12 +88,9 @@ namespace PD.Workademy.Todo.Application.Services
 
         public TodoItemDTO UpdateTodoItem(TodoItemDTO request)
         {
-            TodoItem todoItem = new TodoItem(request.Id, request.Title, request.Description, request.IsDone,
-                                new Category(request.Category.Id, request.Category.Name),
-                                new User(request.User.Id, request.User.FirstName, request.User.LastName));
-
-            _todoItemServiceRepository.UpdateTodoItem(todoItem);
-
+            User user = _userRepository.GetUserById(request.User.Id);
+            Category category = _categoryRepository.GetCategoryById(request.Category.Id);
+            _todoItemServiceRepository.UpdateTodoItem(new TodoItem(request.Id, request.Title, request.Description, request.IsDone, category, user));
             TodoItemDTO todoItemDTO = new TodoItemDTO(request.Id, request.Title, request.Description, request.IsDone,
                                       new CategoryDTO(request.Category.Id, request.Category.Name),
                                       new UserDTO(request.User.Id, request.User.FirstName, request.User.LastName));

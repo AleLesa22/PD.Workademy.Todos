@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o2I5pu5aJ9JclGcRBkUsIQrHCmZpJdhFN4wt7LWX0jObMQ8cvfGzBjmJtaDcoztcJbc1ySvgrbP4WvWC8PKNMw==",
+  "dgSpecHash": "qv74neupBBdmFHf2d0j7d+P3oDME1/t0PmPm5+TiIPods9zGGKdVG/iMqTf157HC7iDskjakkLVcx73n7TN4lQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\GIT LAST COMMIT\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Web\\PD.Workademy.Todo.Web\\PD.Workademy.Todo.Web.csproj",
+  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\Todo_BackEnd\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Web\\PD.Workademy.Todo.Web\\PD.Workademy.Todo.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\avidakovic\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\avidakovic\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

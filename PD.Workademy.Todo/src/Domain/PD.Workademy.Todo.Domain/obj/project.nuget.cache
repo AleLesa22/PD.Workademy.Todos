@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C2MC2sY/W1nYJd8hrO7MUU68a6+dKknndaqQGnwNCR60lcB/Rgntyc+2o4MZeNRB0nWUA3Lo83ecGXzr8dqnEw==",
+  "dgSpecHash": "eZJJK3qBvaJj4w6XcGfGBBGAT8O6tuFX2m6BOCr8D7FE8MHEcqjxeYRsQvGL8/3CejXQWc9rUbMY26X2Zj6dDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\GIT LAST COMMIT\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Domain\\PD.Workademy.Todo.Domain\\PD.Workademy.Todo.Domain.csproj",
+  "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\Todo_BackEnd\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Domain\\PD.Workademy.Todo.Domain\\PD.Workademy.Todo.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
