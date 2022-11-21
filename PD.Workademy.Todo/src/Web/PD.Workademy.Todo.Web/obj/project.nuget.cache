@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qv74neupBBdmFHf2d0j7d+P3oDME1/t0PmPm5+TiIPods9zGGKdVG/iMqTf157HC7iDskjakkLVcx73n7TN4lQ==",
+  "dgSpecHash": "bCZNwB3+mfmeT/ekOrJ04Ittak3908e6ibOd4spgyLUTd8VM2WJAeXzxV9KLCg4xBfVc8oWxU4BdZIPH8TmBug==",
   "success": true,
   "projectFilePath": "C:\\Users\\avidakovic\\Desktop\\Todo_BackEnd\\PD.Workademy.Todos\\PD.Workademy.Todo\\src\\Web\\PD.Workademy.Todo.Web\\PD.Workademy.Todo.Web.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\avidakovic\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\avidakovic\\.nuget\\packages\\mongodb.bson\\2.17.1\\mongodb.bson.2.17.1.nupkg.sha512",
